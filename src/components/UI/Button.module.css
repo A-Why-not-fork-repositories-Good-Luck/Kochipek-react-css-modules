@@ -1,0 +1,17 @@
+.button {
+    background-color: #3ab4f6;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .button:hover {opacity: 0.8;}

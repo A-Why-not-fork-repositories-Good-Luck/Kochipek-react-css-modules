@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  
+  font-family: sans-serif;
+  background: #23272F;
+}
+
+body {
+  margin: 0;
+}
