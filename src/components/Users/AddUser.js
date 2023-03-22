@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 import classes from "./AddUser.module.css";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
+import Wrapper from "../Helpers/Wrapper";
 
 const AddUser = (props) => {
   const [Username, setUsername] = useState("");
@@ -45,7 +46,7 @@ const AddUser = (props) => {
     };
 
   return (
-    <div>
+    <Wrapper>
        {/* we use the ErrorModal component to display an error message if the user enters invalid input */}
      {Error && <ErrorModal title={Error.title} message={Error.message} onConfirm={errorHandler} />}
       {/* // here we used 2 classes, one from the Card component and one from the AddUser component */}
@@ -68,7 +69,7 @@ const AddUser = (props) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </div>
+    </Wrapper>
   );
 };
 export default AddUser;

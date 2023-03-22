@@ -14,11 +14,11 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       {/*  we pass an empty array to the UserList component to avoid errors */}
       <UserList users={userList} />
-    </div>
+    </>
   );
 }
 export default App;
